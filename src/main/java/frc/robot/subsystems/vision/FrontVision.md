@@ -4,7 +4,7 @@
 
 ## Description
 
-The FrontVision subsystem controls a Limelight camera for the 427 robot. It record the gamepiece's (Notes) position and rotation and determines how far away it is to the robots intake.
+The FrontVision subsystem controls a PhotonVision camera for the 427 robot. It record the gamepiece's (Notes) position and rotation and determines how far away it is to the robots intake.
 
 ## Connected Devices
 
@@ -12,7 +12,7 @@ The FrontVision subsystem controls a Limelight camera for the 427 robot. It reco
 
 ## Picture
 
-![alt text](https://cdn.andymark.com/product_images/limelight-3/63ceb4499a4720101863db46/zoom.jpg?c=1674490953 "Limelight")
+![alt text](https://raw.githubusercontent.com/RoboLancers/RoboLancers-Hardware/refs/heads/main/Helios/Images/CitrusSight_Black_2-3Ratio_Fit_3_20_Render.jpg "Limelight")
 
 ## Methods
 
@@ -30,7 +30,7 @@ The FrontVision subsystem controls a Limelight camera for the 427 robot. It reco
 | `getNoteHorizontalDistance` | `double` | `pitch` , `yaw` | Calculates the horizontal distance needed to reach the note |
 
 ## Periodic
-
+Recieves the latest results from the SmartDashboard and stores it
 ### Logging
 Logs the following values periodically onto the SmartDashboard:
 | Name | Value | Notes |

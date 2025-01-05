@@ -31,6 +31,7 @@ This subsystem controls a Limelight camera for the 427 robot. It uses the camera
 
 
 ## Periodic
+Recieves the latest results from the SmartDashboard and stores it
 
 ### Logging
 Logs the following values onto the SmartDashboard:
