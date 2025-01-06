@@ -4,10 +4,10 @@
 
 ## Description
 
-This subsystem controls a Limelight camera for the 427 robot. It uses the camera to record its position and determines how far away each respective April Tags is.
+This subsystem controls a Limelight camera for the 427 robot. It uses the camera and its network table to record its position and rotation whilst retrieving it. It also determines how far away each respective April Tags is.
 
 ## Connected Devices
-- Camera ( `limelightNT` ) for recording distance and identifying April Tags
+- Camera ( `limelightNT` ) for recording distance and identifying April Tags. Also acts as a way to store information to a network table and then to the SmartDashboard.
 
 ## Picture
 
@@ -31,7 +31,7 @@ This subsystem controls a Limelight camera for the 427 robot. It uses the camera
 
 
 ## Periodic
-Recieves the latest results from the SmartDashboard and stores it
+Recieves the latest results of the robot and cameras position from the SmartDashboard and stores it. Checks if the robot is on or off, reads the values of its position, and converts its various positional values into variables.
 
 ### Logging
 Logs the following values onto the SmartDashboard:
@@ -43,9 +43,11 @@ Logs the following values onto the SmartDashboard:
 | `LimelightRoll` | The roll, front to back, rotation of the Limelight | Used in the `getRotation3d` method |
 | `LimelightPitch` | The pitch, side to side, rotation of the Limelight | Used in the `getRotation3d` method |
 | `LimelightYaw` | The yaw, around the vertical axis, rotation of the Limelight | Used in the `getRotation3d` method |
-| `LimelightTotalLatency` | The total latency, how much much delay there is, of the Limelight |
-| `LimelightTargetArea` | The area the Limelight is targetting |
-| `LimelightTargetX` | The X position of the area the Limelight is targetting |
-| `LimelightTargetY` | The Y position of the area the Limelight is targetting |
+| `LimelightTotalLatency` | The total latency in ms, how much much delay there is, of the Limelight |
+| `LimelightTargetArea` | 3D transform of the camera in the coordinate system of the primary in-view AprilTag |
+| `LimelightTargetX` | The X transform of the camera in the coordinate system of the primary in-view AprilTag |
+| `LimelightTargetY` | The Y transform of the camera in the coordinate system of the primary in-view AprilTag |
 | `LimelightNearestAprilTag` | Which AprilTag is closest to the Limelight | Uses the `getClosestAprilTagID` method |
 | `Limelight Connected` | Whether the Limelight is connected or not |
+
+### 

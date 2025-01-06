@@ -14,6 +14,10 @@ The FrontVision subsystem controls a PhotonVision camera for the 427 robot. It r
 
 ![alt text](https://raw.githubusercontent.com/RoboLancers/RoboLancers-Hardware/refs/heads/main/Helios/Images/CitrusSight_Black_2-3Ratio_Fit_3_20_Render.jpg "Limelight")
 
+## PhotonPipelineResult
+
+[Link to Properties and Methods](https://javadocs.photonvision.org/org/photonvision/vision/pipeline/result/CVPipelineResult.html)
+
 ## Methods
 
 |Method name |Returns     |Parameters  |Description |
@@ -28,6 +32,7 @@ The FrontVision subsystem controls a PhotonVision camera for the 427 robot. It r
 | `getNotePose` | instance of `Transform2d` | N/A | Gives the position of the note |
 | `getNoteForwardDistance` | `double` | `pitch` | Calculates the forward distance needed to reach the note |
 | `getNoteHorizontalDistance` | `double` | `pitch` , `yaw` | Calculates the horizontal distance needed to reach the note |
+| `` | `` |
 
 ## Periodic
 Recieves the latest results from the SmartDashboard and stores it
